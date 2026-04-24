@@ -4,24 +4,25 @@
   <!-- SEO -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Parth Rajendrakumar Darji | BIM / VDC Engineer Portfolio" />
-  <meta name="keywords" content="BIM Engineer, VDC Engineer, Revit, Navisworks, MEP Coordination, Construction Technology" />
+  <meta name="description" content="Parth Darji | Ultra Luxury BIM / VDC Engineer Portfolio" />
+  <meta name="keywords" content="BIM Engineer, VDC Engineer, Revit, Navisworks, Construction Technology, Portfolio" />
   <meta name="author" content="Parth Rajendrakumar Darji" />
-  <title>Parth Darji | BIM / VDC Engineer</title>
+  <title>Parth Darji | Premium Portfolio</title>
 
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Background Effects -->
-  <div class="noise"></div>
-  <div class="orb orb1"></div>
-  <div class="orb orb2"></div>
-  <div class="orb orb3"></div>
+  <!-- Cursor -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
 
-  <!-- Navbar -->
+  <!-- Background -->
+  <canvas id="particles"></canvas>
+
+  <!-- NAV -->
   <header class="header glass">
-    <nav class="navbar container">
+    <nav class="nav container">
       <a href="#home" class="logo">PARTH.</a>
 
       <ul class="nav-links" id="navLinks">
@@ -29,286 +30,176 @@
         <li><a href="#about" class="nav-link">About</a></li>
         <li><a href="#skills" class="nav-link">Skills</a></li>
         <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#experience" class="nav-link">Experience</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
 
-      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">
+      <button class="menu-btn" id="menuBtn" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
     </nav>
   </header>
 
-  <!-- Hero -->
-  <section class="hero container section" id="home">
+  <!-- HERO -->
+  <section class="hero container" id="home">
     <div class="hero-grid">
-      <div class="hero-content reveal">
-        <p class="eyebrow">Open to Travel & Relocation</p>
-        <h1>Parth Rajendrakumar Darji</h1>
+
+      <div class="hero-left reveal">
+        <p class="tag">OPEN TO RELOCATION • U.S. WORK READY</p>
+
+        <h1>
+          Parth <br />
+          Darji
+        </h1>
+
         <h2><span id="typing"></span></h2>
 
-        <p class="hero-text">
-          BIM / VDC Engineer with 4+ years of experience delivering high-performance
-          MEP coordination, clash detection, construction workflows, and intelligent
-          digital models for commercial, healthcare, and industrial projects.
+        <p class="lead">
+          Premium BIM / VDC professional delivering coordinated models,
+          clash-free systems, faster field execution, and measurable project results.
         </p>
 
         <div class="hero-actions">
-          <a href="#projects" class="btn primary ripple">View Projects</a>
-          <a href="#" class="btn secondary ripple">Download Resume</a>
+          <a href="#projects" class="btn primary magnetic">View Work</a>
+          <a href="#" class="btn ghost magnetic">Download Resume</a>
         </div>
 
-        <div class="hero-meta">
-          <span>Edison, NJ</span>
-          <span>OPT Authorized</span>
-          <span>U.S. Project Experience</span>
+        <div class="metrics">
+          <div><strong>4+</strong><span>Years</span></div>
+          <div><strong>25%</strong><span>Less RFIs</span></div>
+          <div><strong>20%</strong><span>Less Rework</span></div>
+        </div>
+      </div>
+
+      <div class="hero-right reveal">
+        <div class="floating-card tilt glass">
+          <div class="glow-line"></div>
+          <p>Recruiter Snapshot</p>
+          <h3>High Impact Candidate</h3>
+
+          <ul>
+            <li>Advanced Revit + Navisworks</li>
+            <li>Remote U.S. Coordination Experience</li>
+            <li>Construction + Modeling Mindset</li>
+            <li>Fast Learner / Reliable Executor</li>
+          </ul>
         </div>
       </div>
 
-      <div class="hero-card glass reveal">
-        <div class="card-top"></div>
-        <h3>Hiring Manager View</h3>
-        <p>
-          Experienced BIM professional focused on reducing clashes, improving model
-          quality, and accelerating field execution.
-        </p>
-
-        <div class="stats">
-          <div>
-            <strong>4+</strong>
-            <span>Years</span>
-          </div>
-          <div>
-            <strong>20%</strong>
-            <span>Rework Reduction</span>
-          </div>
-          <div>
-            <strong>25%</strong>
-            <span>Fewer RFIs</span>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
 
-  <!-- About -->
+  <!-- ABOUT -->
   <section class="section container" id="about">
-    <div class="section-head reveal">
-      <p class="eyebrow">About</p>
-      <h2>Built for Complex Projects</h2>
+    <div class="section-title reveal">
+      <p>ABOUT</p>
+      <h2>Built for Real Construction Problems</h2>
     </div>
 
-    <div class="about-grid">
-      <div class="glass panel reveal">
+    <div class="grid-3">
+      <div class="card glass tilt reveal">
         <h3>Professional Summary</h3>
-        <p>
-          I help project teams convert design intent into coordinated, buildable
-          digital models. My focus is constructability, collaboration, and clean execution.
-        </p>
+        <p>I bridge design intent and field execution through BIM systems that reduce waste and confusion.</p>
       </div>
 
-      <div class="glass panel reveal">
+      <div class="card glass tilt reveal">
         <h3>What I Do</h3>
-        <p>
-          Revit MEP modeling, Navisworks clash detection, shop drawings,
-          quantity takeoffs, 4D sequencing, QA/QC, field coordination.
-        </p>
+        <p>MEP modeling, clash detection, shop drawings, QA/QC, takeoffs, sequencing, coordination.</p>
       </div>
 
-      <div class="glass panel reveal">
+      <div class="card glass tilt reveal">
         <h3>Why Hire Me</h3>
-        <p>
-          I understand both modeling and real-world construction constraints.
-          That means fewer errors, faster decisions, and smoother delivery.
-        </p>
+        <p>I focus on outcomes: fewer clashes, cleaner models, faster approvals, smoother builds.</p>
       </div>
     </div>
   </section>
 
-  <!-- Skills -->
+  <!-- SKILLS -->
   <section class="section container" id="skills">
-    <div class="section-head reveal">
-      <p class="eyebrow">Capabilities</p>
-      <h2>Skills & Systems</h2>
+    <div class="section-title reveal">
+      <p>SKILLS</p>
+      <h2>Elite Toolset</h2>
     </div>
 
-    <div class="skills-grid">
-      <div class="glass skill-card reveal">
-        <h3>Core BIM</h3>
-        <div class="bar"><span style="width:95%"></span></div>
-        <p>MEP Coordination / Clash Detection / Shop Drawings</p>
+    <div class="skill-wrap">
+
+      <div class="skill glass reveal">
+        <span>Revit MEP</span>
+        <div class="bar"><i style="width:95%"></i></div>
       </div>
 
-      <div class="glass skill-card reveal">
-        <h3>Software</h3>
-        <div class="bar"><span style="width:92%"></span></div>
-        <p>Revit / Navisworks / ACC / BIM 360 / AutoCAD</p>
+      <div class="skill glass reveal">
+        <span>Navisworks Manage</span>
+        <div class="bar"><i style="width:92%"></i></div>
       </div>
 
-      <div class="glass skill-card reveal">
-        <h3>Preconstruction</h3>
-        <div class="bar"><span style="width:85%"></span></div>
-        <p>Takeoffs / Sequencing / Estimating Support</p>
+      <div class="skill glass reveal">
+        <span>Autodesk Construction Cloud</span>
+        <div class="bar"><i style="width:88%"></i></div>
       </div>
 
-      <div class="glass skill-card reveal">
-        <h3>Field Tech</h3>
-        <div class="bar"><span style="width:80%"></span></div>
-        <p>Reality Capture / DroneDeploy / Structionsite</p>
+      <div class="skill glass reveal">
+        <span>MEP Coordination</span>
+        <div class="bar"><i style="width:94%"></i></div>
       </div>
+
     </div>
   </section>
 
-  <!-- Projects -->
+  <!-- PROJECTS -->
   <section class="section container" id="projects">
-    <div class="section-head reveal">
-      <p class="eyebrow">Selected Work</p>
-      <h2>Case Study Projects</h2>
+    <div class="section-title reveal">
+      <p>PROJECTS</p>
+      <h2>Case Study Wins</h2>
     </div>
 
-    <div class="projects-grid">
+    <div class="projects">
 
-      <article class="project glass reveal">
-        <div class="img"></div>
+      <article class="project glass tilt reveal">
+        <div class="project-img"></div>
         <h3>Commercial Facility – USA</h3>
-        <p>Reduced multi-trade conflicts by 15% through remote coordination workflows.</p>
-        <small>Revit • Navisworks • ACC</small>
-        <div class="project-actions">
-          <a href="#" class="btn mini">Live</a>
-          <a href="#" class="btn mini ghost">GitHub</a>
-        </div>
+        <p>Reduced coordination conflicts by 15% across multiple trades.</p>
       </article>
 
-      <article class="project glass reveal">
-        <div class="img"></div>
-        <h3>Industrial Facility</h3>
-        <p>LOD 400 MEP models improved planning accuracy by 20%.</p>
-        <small>Revit • BIM 360</small>
-        <div class="project-actions">
-          <a href="#" class="btn mini">Live</a>
-          <a href="#" class="btn mini ghost">GitHub</a>
-        </div>
+      <article class="project glass tilt reveal">
+        <div class="project-img"></div>
+        <h3>Healthcare Build</h3>
+        <p>Protected design intent and reduced RFIs by 25%.</p>
       </article>
 
-      <article class="project glass reveal">
-        <div class="img"></div>
-        <h3>Healthcare Project</h3>
-        <p>Maintained design intent during construction and cut RFIs by 25%.</p>
-        <small>Coordination • QA/QC</small>
-        <div class="project-actions">
-          <a href="#" class="btn mini">Live</a>
-          <a href="#" class="btn mini ghost">GitHub</a>
-        </div>
+      <article class="project glass tilt reveal">
+        <div class="project-img"></div>
+        <h3>Industrial Plant</h3>
+        <p>LOD 400 models improved planning accuracy by 20%.</p>
       </article>
 
-      <article class="project glass reveal">
-        <div class="img"></div>
-        <h3>Advanced U.S. Facility</h3>
-        <p>Reduced potential field rework by 20% through model updates.</p>
-        <small>Navisworks • ACC</small>
-        <div class="project-actions">
-          <a href="#" class="btn mini">Live</a>
-          <a href="#" class="btn mini ghost">GitHub</a>
-        </div>
-      </article>
-
-      <article class="project glass reveal">
-        <div class="img"></div>
-        <h3>Packaging Manufacturing</h3>
-        <p>Technical production drawings and scheduling support.</p>
-        <small>AutoCAD</small>
-        <div class="project-actions">
-          <a href="#" class="btn mini">Live</a>
-          <a href="#" class="btn mini ghost">GitHub</a>
-        </div>
-      </article>
-
-      <article class="project glass reveal">
-        <div class="img"></div>
-        <h3>Construction Analytics</h3>
-        <p>Workflow dashboards for coordination tracking and reporting.</p>
-        <small>Excel • Reporting</small>
-        <div class="project-actions">
-          <a href="#" class="btn mini">Live</a>
-          <a href="#" class="btn mini ghost">GitHub</a>
-        </div>
+      <article class="project glass tilt reveal">
+        <div class="project-img"></div>
+        <h3>Advanced U.S. Coordination</h3>
+        <p>Reduced probable field rework through live updates.</p>
       </article>
 
     </div>
   </section>
 
-  <!-- Experience -->
-  <section class="section container" id="experience">
-    <div class="section-head reveal">
-      <p class="eyebrow">Career Path</p>
-      <h2>Experience Timeline</h2>
-    </div>
-
-    <div class="timeline">
-      <div class="timeline-item reveal glass">
-        <h3>BIM Engineer</h3>
-        <p>Raywell Studio Pvt. Ltd. | 2023</p>
-      </div>
-
-      <div class="timeline-item reveal glass">
-        <h3>Sr. BIM Modeler</h3>
-        <p>Varmine ConTech Pvt. Ltd. | 2020–2023</p>
-      </div>
-
-      <div class="timeline-item reveal glass">
-        <h3>Project Engineer</h3>
-        <p>R C Pack Packaging | 2019–2020</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Testimonials -->
-  <section class="section container">
-    <div class="section-head reveal">
-      <p class="eyebrow">Reputation</p>
-      <h2>Testimonials</h2>
-    </div>
-
-    <div class="about-grid">
-      <div class="glass panel reveal">
-        <p>"Highly reliable in coordination meetings and problem-solving."</p>
-      </div>
-      <div class="glass panel reveal">
-        <p>"Strong technical BIM execution with great attention to detail."</p>
-      </div>
-      <div class="glass panel reveal">
-        <p>"Excellent communicator across design and construction teams."</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
+  <!-- CONTACT -->
   <section class="section container" id="contact">
-    <div class="section-head reveal">
-      <p class="eyebrow">Contact</p>
-      <h2>Let’s Build Something Great</h2>
+    <div class="section-title reveal">
+      <p>CONTACT</p>
+      <h2>Let’s Talk Value</h2>
     </div>
 
-    <div class="contact-grid">
-      <div class="glass panel reveal">
-        <p>Email: darjiparth853@gmail.com</p>
-        <p>Phone: +1 (848) 348-0396</p>
-        <p>LinkedIn: linkedin.com/in/darjiparth853/</p>
-        <p>GitHub: github.com/yourusername</p>
-      </div>
+    <div class="contact-box glass reveal">
+      <p>Email: darjiparth853@gmail.com</p>
+      <p>Phone: +1 (848) 348-0396</p>
+      <p>LinkedIn: linkedin.com/in/darjiparth853/</p>
+      <p>Edison, New Jersey</p>
 
-      <form class="glass panel reveal">
-        <input type="text" placeholder="Your Name" />
-        <input type="email" placeholder="Your Email" />
-        <textarea rows="5" placeholder="Your Message"></textarea>
-        <button type="submit" class="btn primary ripple">Send Message</button>
-      </form>
+      <a href="mailto:darjiparth853@gmail.com" class="btn primary magnetic">Hire Me</a>
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="footer">
-    <p>© 2026 Parth Darji — Designed to Impress.</p>
+    <p>© 2026 Parth Darji — Luxury Digital Presence.</p>
   </footer>
 
   <script src="script.js"></script>
